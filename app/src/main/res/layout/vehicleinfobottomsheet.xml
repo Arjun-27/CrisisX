@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:background="@color/cardview_light_background">
+
+    <TextView
+        android:id="@+id/vehicleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle"
+        android:textAllCaps="true"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:padding="4dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vehicleNo"
+        android:textAllCaps="true"
+        android:text="MH 12 YZ 1234"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="16sp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"/>
+
+    <TextView
+        android:id="@+id/vehicleStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@color/colorAccent"
+        android:paddingLeft="8dp"
+        android:paddingBottom="8dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/vehicleRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingBottom="8dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.theapp2.Settings.EditProfile"
+    tools:showIn="@layout/activity_edit_profile">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textInputLayout5"
+            android:padding="8dp"
+            android:text="@string/generalsettings"
+            android:textColor="@color/colorAccent"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/IDEditTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textInputLayout5"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/id"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/postEdit"
+            android:text="@string/post"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:paddingStart="16dp"
+            android:paddingLeft="16dp">
+
+            <EditText
+                android:id="@+id/nameEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/citizenCard"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:text="@string/name"
+                android:layout_alignParentLeft="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textInputLayout4"
+            android:layout_marginTop="8dp"
+            android:paddingStart="16dp"
+            android:paddingLeft="16dp"
+            android:layout_alignParentLeft="true">
+
+            <EditText
+                android:id="@+id/phoneEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:text="@string/phone"
+                android:layout_alignParentLeft="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textInputLayout5"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:text="@string/personalsettings"
+            android:textColor="@color/colorAccent"
+            android:layout_alignParentLeft="true"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:paddingStart="16dp"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="16dp">
+
+            <EditText
+                android:id="@+id/emailEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:text="@string/email"
+                android:layout_alignParentLeft="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:text="@string/address"
+            android:textColor="@color/colorAccent"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/addr"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:maxLines="4"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/address1"
+            android:textSize="18sp" />
+
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Tap the address edit" />
+
+    </LinearLayout>
+
+</RelativeLayout>

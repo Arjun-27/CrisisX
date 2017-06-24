@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/role_selection_text"
+        android:text="Role Selection"
+        android:textSize="36sp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/identify_text"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/role_selection_text"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:text="Please identify yourself in one of the categories given below to continue..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_below="@+id/identify_text"
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radio_dae"
+            android:text="@string/dae_official"
+            android:drawableLeft="@drawable/radiation"
+            android:drawableStart="@drawable/radiation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radio_emergency"
+            android:text="@string/emergency_services"
+            android:drawableLeft="@drawable/alarm"
+            android:drawableStart="@drawable/alarm"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radio_user"
+            android:text="@string/a_citizen"
+            android:drawableLeft="@drawable/user"
+            android:drawableStart="@drawable/user"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+</RelativeLayout>
